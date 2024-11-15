@@ -79,6 +79,14 @@ def search_subsidies(df, keyword='', company_category='', num_of_employee='', co
     return df
 
 def main():
+    st.set_page_config(
+        page_title="補助金診断ツール２",
+        page_icon="💰",
+        initial_sidebar_state="collapsed",
+        menu_items={
+            "About": "Thanks for using this app!"
+        }
+    )
     st.title('補助金検索システム')
     
     # サイドバーに検索条件を配置
